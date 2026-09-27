@@ -202,7 +202,22 @@ print('f' in my_str)  # False
 # print(name_and_age)  # John Doe26
 
 
+############# ========== String Interpolation ============== ############### :
+#  The process of inserting variables and expressions into a string is called String interpolation
+
+# python has the category called f-strings ( short for formatted string literals) which allows you to handle interpolation with an compact and readable sysntax
+
+# F-strings start with f(either lowercase or uppercase) before the quotes 
+
+name = 'John Doe';
+age = 26;
+
+name_and_age = f'My names is {name} and I am {age} years old'
+print(name_and_age);
 
 
 
-# String Interpolation :
+
+# num1 = 3;
+# num2 = 10;
+# num1_and_num2 = f''
