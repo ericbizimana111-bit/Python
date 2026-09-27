@@ -160,20 +160,49 @@ print('f' in my_str)  # False
 # bool	    ❌         No	True
 
 
-# String Concatentaion : This is the act of combining multiple strings with the plus (+) operator
+################ -----------  String Concatentaion ------------------------- #########################
+# : This is the act of combining multiple strings with the plus (+) operator
 
-my_str_1 = 'Hello';
-my_str_2 = "World";
+# my_str_1 = 'Hello';
+# my_str_2 = "World";
 
-str_plus_str = my_str_1 + " " + my_str_2;
-print(str_plus_str);
+# str_plus_str = my_str_1 + " " + my_str_2;
+# print(str_plus_str);
 
 # Repeating Strings
 # You can also repeat a string by multiplying it with an integer using the * operator. The string is repeated the specified number of times:
 
-sound = "ha";
-repated_str = sound * 5;
-print(repated_str);
+# sound = "ha";
+# repated_str = sound * 5;
+# print(repated_str);
 
-# String Interpolation : 
+# name = 'John Doe'
+# age = 26
 
+# # TypeError: can only concatenate str (not "int") to str
+# name_and_age = name + age # this give the typo error
+
+
+# name = 'John Doe'
+# age = 26
+
+# # TypeError: can only concatenate str (not "int") to str
+# name_and_age = name + " " + str(age)  # this give the typo error
+
+# print(name_and_age)
+
+
+# the use of the augmented assignement operator represented by +=
+# name = 'John Doe'
+# age = 26
+
+# name_and_age = name  # Start with the name
+# name_and_age += str(age)  # Append the age as string
+
+# print(name_and_age)  # John Doe26
+
+
+
+
+
+# String Interpolation :
