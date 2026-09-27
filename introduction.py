@@ -17,5 +17,11 @@
 # my_integer_var = 10
 # print("integer:", my_integer_var);
 
-num = 39;
-print(num)
+# num = 39;
+# print(num)
+
+# number= 10;
+# print(type(number));The output of <class 'int'> means that developer is a string type.
+
+# developer = 'kim'
+# print(type(developer)); The output of <class 'str'> means that developer is a string type.
