@@ -87,3 +87,10 @@ print('Hello' in my_str);
 print('world' in my_str);
 print('hi' in my_str);
 print('e' in my_str);
+print('h' in my_str);
+print('H' in my_str);
+print('Hello' in my_str)  # True
+print('hey' in my_str)    # False
+print('hi' in my_str)    # False
+print('e' in my_str)  # True
+print('f' in my_str)  # False
