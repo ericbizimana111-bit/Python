@@ -96,11 +96,15 @@ print('e' in my_str)  # True
 print('f' in my_str)  # False
 '''
 
-'''
+
 # Getting the length og the string using the built-in len() function.
 my_str = "Hello World";
 print(len(my_str))
 print(my_str[0]);
 print(my_str[2]);
 print(my_str[5]);
-'''
+# use the -1 to get the last character of any string 
+# second to last character with -2 and so on 
+
+print(my_str[-1]);
+print(my_str[-2]);
