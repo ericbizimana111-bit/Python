@@ -12,4 +12,7 @@ print('Hello world!')  # Hello world!
 print('My favorite colors are','blue','green','red');
 
 
+# . A data type describes the kind of value a variable holds, for example, a number or a piece of text. Programming languages use data types so they know how to store and work with different kinds of information.
 
+my_integer_var = 10
+print("integer:", my_integer_var);
