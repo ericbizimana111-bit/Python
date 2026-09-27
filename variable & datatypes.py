@@ -44,8 +44,8 @@
 # account_balance / 2  # this will give the error
 
 # The isinstance() function also allows you to check for multiple types at once.
-account_balance  = 12;
-print(isinstance(account_balance, (int,float,bool,str))); 
+# account_balance  = 12;
+# print(isinstance(account_balance, (int,float,bool,str))); 
 
 # type() and isinstance() functions to ensure your variables contain the correct data types before performing operations on them.
 
@@ -55,12 +55,26 @@ print(isinstance(account_balance, (int,float,bool,str)));
 
 # A string is a sequence of characters surrounded by either single or double quotation marks. Python treats both forms as strings, so you can use either one. Here are some examples:
 
-# my_str_1 = 'Hello'  //  this is  the snake case 
+# my_str_1 = 'Hello'  //  this is  the snake case
 # my_str_2 = "World"
 
-#Multiline string 
-my_str_1 = """My names
-are Bizimana Eric"""
+#Multiline string  using """"""  helps to write the string and go on the second line  the same to this ''''''
+# my_str_1 = """My names
+# are Bizimana Eric"""
 
-my_str_2 = '''My names
-are Bizimana eric'''
+# my_str_2 = '''My names
+# are Bizimana eric'''
+
+
+
+
+
+
+
+# msg = "It's a sunny day"
+# quote = 'She said, "Hello World!"'  #this will help you to get Hello, World wrapped in double quotes
+
+msg = 'It\'s a sunny day'
+quote = "She said, \"Hello!\""
+print(msg);
+print(quote);
