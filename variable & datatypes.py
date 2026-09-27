@@ -55,6 +55,12 @@ print(isinstance(account_balance, (int,float,bool,str)));
 
 # A string is a sequence of characters surrounded by either single or double quotation marks. Python treats both forms as strings, so you can use either one. Here are some examples:
 
-my_str_1 = 'Hello'
-my_str_2 = "World"
+# my_str_1 = 'Hello'  //  this is  the snake case 
+# my_str_2 = "World"
 
+#Multiline string 
+my_str_1 = """My names
+are Bizimana Eric"""
+
+my_str_2 = '''My names
+are Bizimana eric'''
