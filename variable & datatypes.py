@@ -74,7 +74,16 @@
 # msg = "It's a sunny day"
 # quote = 'She said, "Hello World!"'  #this will help you to get Hello, World wrapped in double quotes
 
-msg = 'It\'s a sunny day'
-quote = "She said, \"Hello!\""
-print(msg);
-print(quote);
+# msg = 'It\'s a sunny day'
+# quote = "She said, \"Hello!\""
+# print(msg);
+# print(quote);
+
+
+#------- To check whether the character or characters exist in the string or not.--------- #
+my_str = 'Hello world';
+
+print('Hello' in my_str);
+print('world' in my_str);
+print('hi' in my_str);
+print('e' in my_str);
