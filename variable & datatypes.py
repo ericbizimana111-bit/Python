@@ -50,3 +50,11 @@ print(isinstance(account_balance, (int,float,bool,str)));
 # type() and isinstance() functions to ensure your variables contain the correct data types before performing operations on them.
 
 
+#isinstance is used to check the datatype fo the varible 
+
+
+# A string is a sequence of characters surrounded by either single or double quotation marks. Python treats both forms as strings, so you can use either one. Here are some examples:
+
+my_str_1 = 'Hello'
+my_str_2 = "World"
+
