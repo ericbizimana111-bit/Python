@@ -45,12 +45,12 @@
 
 # The isinstance() function also allows you to check for multiple types at once.
 # account_balance  = 12;
-# print(isinstance(account_balance, (int,float,bool,str))); 
+# print(isinstance(account_balance, (int,float,bool,str)));
 
 # type() and isinstance() functions to ensure your variables contain the correct data types before performing operations on them.
 
 
-#isinstance is used to check the datatype fo the varible 
+# isinstance is used to check the datatype fo the varible
 
 
 # A string is a sequence of characters surrounded by either single or double quotation marks. Python treats both forms as strings, so you can use either one. Here are some examples:
@@ -58,17 +58,12 @@
 # my_str_1 = 'Hello'  //  this is  the snake case
 # my_str_2 = "World"
 
-#Multiline string  using """"""  helps to write the string and go on the second line  the same to this ''''''
+# Multiline string  using """"""  helps to write the string and go on the second line  the same to this ''''''
 # my_str_1 = """My names
 # are Bizimana Eric"""
 
 # my_str_2 = '''My names
 # are Bizimana eric'''
-
-
-
-
-
 
 
 # msg = "It's a sunny day"
@@ -98,13 +93,87 @@ print('f' in my_str)  # False
 
 
 # Getting the length og the string using the built-in len() function.
-my_str = "Hello World";
-print(len(my_str))
-print(my_str[0]);
-print(my_str[2]);
-print(my_str[5]);
-# use the -1 to get the last character of any string 
-# second to last character with -2 and so on 
+# my_str = "Hello World"
+# print(len(my_str))
+# print(my_str[0])
+# print(my_str[2])
+# print(my_str[5])
+# # use the -1 to get the last character of any string
+# # second to last character with -2 and so on
 
-print(my_str[-1]);
-print(my_str[-2]);
+# print(my_str[-1])  # d
+# print(my_str[-2])  # l
+# print(my_str[-3])  # r
+
+# . A mutable value can be changed after it is created, while an immutable value cannot.
+
+# You can point a variable at a new value, which is called reassignment, but you can't change an immutable value itself by adding, removing, or replacing any of its elements.
+
+# 2. Immutable
+
+# Immutable = cannot be changed after creation.
+
+# For example, a string is immutable:
+
+# name = "Eric"
+
+# name[0] = "B"
+
+# This produces an error because you cannot change an individual character of an existing string.
+
+# Instead, Python creates a new string:
+
+# name = "Eric"
+
+# name = "Bizimana"
+
+# print(name)
+
+
+# # direct modification of the string is not allowed
+# greeting = 'hi';
+# greeting[0] = 'H';
+
+# print(greeting);
+
+
+###############  Common immutable types  :##################
+
+# int
+# float
+# bool
+# str
+# tuple
+# frozenset
+# bytes
+
+# Easy way to remember
+
+# Type     	Mutable?	Example
+# list     	✅         Yes[1, 2, 3]
+# dict     	✅         Yes	{"name": "Eric"}
+# set     	✅         Yes	{1, 2, 3}
+# str	      ❌         No	"Eric"
+# tuple	    ❌         No(1, 2, 3)
+# int	      ❌         No	25
+# float     ❌         No	3.14
+# bool	    ❌         No	True
+
+
+# String Concatentaion : This is the act of combining multiple strings with the plus (+) operator
+
+my_str_1 = 'Hello';
+my_str_2 = "World";
+
+str_plus_str = my_str_1 + " " + my_str_2;
+print(str_plus_str);
+
+# Repeating Strings
+# You can also repeat a string by multiplying it with an integer using the * operator. The string is repeated the specified number of times:
+
+sound = "ha";
+repated_str = sound * 5;
+print(repated_str);
+
+# String Interpolation : 
+
