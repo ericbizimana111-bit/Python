@@ -1,18 +1,21 @@
 
-# This is a single-line comment
-x = 25;
-y = 17;
-X = 46;
-#python varibles are case sensitive it means age is different from Age
+# # This is a single-line comment
+# x = 25;
+# y = 17;
+# X = 46;
+# #python varibles are case sensitive it means age is different from Age
 
-print(X)
-print('Hello world!')  # Hello world!
+# print(X)
+# print('Hello world!')  # Hello world!
 
-# function to show multiple values, or arguments, at once by separating them with commas. For example
-print('My favorite colors are','blue','green','red');
+# # function to show multiple values, or arguments, at once by separating them with commas. For example
+# print('My favorite colors are','blue','green','red');
 
 
-# . A data type describes the kind of value a variable holds, for example, a number or a piece of text. Programming languages use data types so they know how to store and work with different kinds of information.
+# # . A data type describes the kind of value a variable holds, for example, a number or a piece of text. Programming languages use data types so they know how to store and work with different kinds of information.
 
-my_integer_var = 10
-print("integer:", my_integer_var);
+# my_integer_var = 10
+# print("integer:", my_integer_var);
+
+num = 39;
+print(num)
