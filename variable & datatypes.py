@@ -25,3 +25,25 @@
 
 # developer = 'kim'
 # print(type(developer)); The output of <class 'str'> means that developer is a string type.
+
+my_int_var = 10
+print(type(my_int_var))
+
+my_float_var = 21.290
+print(type(my_float_var))
+
+my_string_var = 'hello'
+print(type(my_string_var))
+
+my_boolean_var = True
+print(type(my_boolean_var))  # <class 'bool'>
+
+# --- use of isinstance -----------  #
+
+# account_balance = '12'
+# account_balance / 2  # this will give the error
+
+# The isinstance() function also allows you to check for multiple types at once.
+
+account_balance  = 12;
+isinstance(account_balance, (int,float,bool,str));
