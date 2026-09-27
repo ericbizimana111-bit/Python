@@ -79,7 +79,7 @@
 # print(msg);
 # print(quote);
 
-
+'''
 #------- To check whether the character or characters exist in the string or not.--------- #
 my_str = 'Hello world';
 
@@ -94,3 +94,13 @@ print('hey' in my_str)    # False
 print('hi' in my_str)    # False
 print('e' in my_str)  # True
 print('f' in my_str)  # False
+'''
+
+'''
+# Getting the length og the string using the built-in len() function.
+my_str = "Hello World";
+print(len(my_str))
+print(my_str[0]);
+print(my_str[2]);
+print(my_str[5]);
+'''
