@@ -212,11 +212,11 @@ print('f' in my_str)  # False
 name = 'John Doe';
 age = 26;
 
-name_and_age = f'My names is {name} and I am {age} years old'
+name_and_age = (f'My names is {name} and I am {age} years old')
 print(name_and_age);
 
 
-
+S
 
 # num1 = 3;
 # num2 = 10;
