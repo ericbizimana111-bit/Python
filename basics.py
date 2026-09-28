@@ -209,15 +209,14 @@ print('f' in my_str)  # False
 
 # F-strings start with f(either lowercase or uppercase) before the quotes 
 
-name = 'John Doe';
-age = 26;
+# name = 'John Doe';
+# age = 26;
 
-name_and_age = (f'My names is {name} and I am {age} years old')
-print(name_and_age);
+# name_and_age = (f'My names is {name} and I am {age} years old')
+# print(name_and_age);
 
 
-S
-
-# num1 = 3;
-# num2 = 10;
-# num1_and_num2 = f''
+num1 = 3;
+num2 = 10;
+num1_and_num2 = (f'{num1} + {num2} is qual to {num1+num2}');
+print(num1_and_num2);
