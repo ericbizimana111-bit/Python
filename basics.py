@@ -216,7 +216,25 @@ print('f' in my_str)  # False
 # print(name_and_age);
 
 
-num1 = 3;
-num2 = 10;
-num1_and_num2 = (f'{num1} + {num2} is qual to {num1+num2}');
-print(num1_and_num2);
+# num1 = 3;
+# num2 = 10;
+# num1_and_num2 = (f'{num1} + {num2} is qual to {num1+num2}');
+# print(num1_and_num2);
+
+####################  What Is String Slicing and How Does It Work? ###########################
+
+
+# String slicing lets you extract a portion of a string or work with only a specific part of it. Here's the basic syntax:
+
+# string[start:stop]
+# if you want to extract characters from a certain index to another , you just separate the start and stop indices witht the colon (:) operator. The start index is inclusive, while the stop index is exclusive 
+
+my_str = "Hello World";
+
+print(my_str[0]);
+print(my_str[1]);
+print(my_str[2]);
+print(my_str[3]);
+
+print(my_str[-1]); #This will give the last character of the string
+print(my_str[-21]);  #This will give the second last character of the string
