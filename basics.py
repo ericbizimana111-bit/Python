@@ -246,4 +246,19 @@ print('f' in my_str)  # False
 # You can also omit the start and stop indices, and Python will default to 0 or the end of the string, respectively. For example, here's what happens if you omit the start index:
 
 my_str = 'Hello world'
-print(my_str[:7])  # Hello w
+print(my_str[:7])  # Hello w   this stops at index 6
+
+print(my_str[8:]); #orld
+#This extracts everything from the character at index 8 until the end of the string.
+
+print(my_str[:]); #Hello world
+
+#Apart from the start and stop indices, there's also an optional step parameter, which is used to specify the increment between each index in the slice. Here's the syntax for that:
+# string[start:stop:step];
+
+print(my_str[0:11:2]); 
+
+#A helpful trick you can do with the step parameter is to reverse a string by setting step to -1, and leaving start and stop blank:
+
+print(my_str[::-1]) # dlrow olleH
+
