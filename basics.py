@@ -229,12 +229,21 @@ print('f' in my_str)  # False
 # string[start:stop]
 # if you want to extract characters from a certain index to another , you just separate the start and stop indices witht the colon (:) operator. The start index is inclusive, while the stop index is exclusive 
 
-my_str = "Hello World";
+# my_str = "Hello World";
 
-print(my_str[0]);
-print(my_str[1]);
-print(my_str[2]);
-print(my_str[3]);
+# print(my_str[0]);
+# print(my_str[1]);
+# print(my_str[2]);
+# print(my_str[3]);
 
-print(my_str[-1]); #This will give the last character of the string
-print(my_str[-21]);  #This will give the second last character of the string
+# print(my_str[-1]); #This will give the last character of the string
+# print(my_str[-2]);  #This will give the second last character of the string
+
+# print(my_str[0:5]); # this will give the first charcter at index 0 aupto index 4 because 5 is exclusive
+
+
+# Note that the stop index is non-inclusive, so [1:4] just extracted the characters from index 1, and up to, but not including, the character at index 4.
+# You can also omit the start and stop indices, and Python will default to 0 or the end of the string, respectively. For example, here's what happens if you omit the start index:
+
+my_str = 'Hello world'
+print(my_str[:7])  # Hello w
