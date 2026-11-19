@@ -1,0 +1,108 @@
+To build this project, you need to understand 5 Python concepts. Let's go through them with simple examples.
+1. What is a hash table?
+A hash table stores data in key-value pairs, just like a Python dictionary.
+
+Example:
+student = {    "name": "Eric",    "age": 20}
+
+
+
+- "name" is a key.
+- "Eric" is its value.
+- "age" is a key.
+- 20 is its value.
+A hash table works differently from a normal dictionary: it converts each key into a number called a hash value.
+2. The ord() function
+Python's ord() function returns the Unicode code point of a character.
+print(ord("a"))  # 97print(ord("b"))  # 98print(ord("c"))  # 99
+
+
+
+Your project uses these numbers to calculate the hash.
+
+For example:
+word = "cat"result = ord("c") + ord("a") + ord("t")print(result)  # 312
+
+
+
+Therefore:
+\[
+hash("cat") = 312
+\]
+
+Important: The hash value is the sum of all character codes.
+3. The hash() method
+You need to create a method that performs this calculation.
+
+Remember:
+- self refers to the current object.
+- key is the string we want to hash.
+- ord() gets each character's Unicode value.
+You need a loop to visit every character.
+
+Example:
+word = "cat"total = 0for character in word:    total += ord(character)print(total)  # 312
+
+
+
+This is the logic you will use inside your hash() method.
+4. Dictionaries inside dictionaries
+This is the most important concept in this project: nested dictionaries.
+
+Suppose two different keys produce the same hash value.
+
+For example, "dear" and "read" both produce 412.
+
+Instead of replacing one value with the other, you store both inside another dictionary:
+collection = {    412: {        "dear": "friend",        "read": "book"    }}
+
+
+
+Understand the structure:
+- 412 is the hash value.
+- "dear" and "read" are the original keys.
+- "friend" and "book" are their values.
+This is called collision handling.
+5. The four methods you need
+Method	Responsibility
+hash(key)	Calculate the hash value.
+add(key, value)	Store a key-value pair.
+remove(key)	Delete a specific key-value pair.
+lookup(key)	Find and return a value.
+
+Let's understand each one.
+
+A. add()
+
+First, calculate the hash. Then create a nested dictionary if that hash does not exist.
+collection = {}hash_value = 424if hash_value not in collection:    collection[hash_value] = {}collection[hash_value]["golf"] = "sport"
+
+
+
+Result:
+{    424: {        "golf": "sport"    }}
+
+
+
+B. lookup()
+
+First, calculate the hash, then retrieve the original key's value.
+collection = {    424: {        "golf": "sport"    }}print(collection[424]["golf"])  # sport
+
+
+
+But what if the key does not exist? You should return None, not cause an error. You can use .get().
+
+C. remove()
+
+You must remove only the requested key, not the entire hash index.
+collection = {    412: {        "dear": "friend",        "read": "book"    }}del collection[412]["dear"]
+
+
+
+Result:
+{    412: {        "read": "book"    }}
+
+
+
+Notice that "read" remains!

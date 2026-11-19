@@ -2,5 +2,5 @@
 # Python has the // operator.
 
 percentage = 70
-rounded = (89 // 10)*10
+rounded = (70 // 10)*10
 print(rounded)

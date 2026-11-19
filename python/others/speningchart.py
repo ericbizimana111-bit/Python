@@ -8,5 +8,7 @@ num3 = 50
 num4 = 50
 
 #sum takes atmost 2 arguments
-total2 = sum(num1, num2)
-print(total2)
+#int object is not ioterable5
+# total2 = sum(num1, num2)
+# print(total2)
+

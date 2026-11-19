@@ -9,4 +9,4 @@
 
 # collection[hash_value]["dear"] = "friend"
 
-print(ord('A'))
+print(ord('A')) #this willl print 65

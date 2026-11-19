@@ -16,6 +16,7 @@ class category:
         self.ledger = []
         
 
+    #description = '' this is called a default parameter, if the user does not provide a value for description, it will default to an empty string.         
     def deposit(self, amount, description = ''):
         self.ledger.append(
             {'amount': amount,'description': description},
@@ -33,5 +34,6 @@ other.deposit(3000, 'Extra money')
 
 food.deposit(1000, 'initial deposit')
 food.deposit(5000, 'Extra money')
+
 
 

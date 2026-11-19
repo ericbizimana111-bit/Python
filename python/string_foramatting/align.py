@@ -9,8 +9,6 @@ description = 'Jesus is the king'
 # print(f"{description:<90}")
 
 
-
+#centering text 
 name = 'Eric'
-
-
 print(name.center(30, '*'))
